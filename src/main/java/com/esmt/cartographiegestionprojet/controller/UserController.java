@@ -3,6 +3,7 @@ package com.esmt.cartographiegestionprojet.controller;
 import com.esmt.cartographiegestionprojet.dto.UserCreateDTO;
 import com.esmt.cartographiegestionprojet.dto.UserDTO;
 import com.esmt.cartographiegestionprojet.dto.response.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/users")
+@Tag(name = "Users",description = "Gestion des utilisateurs")
 public class UserController {
 
     @Autowired
