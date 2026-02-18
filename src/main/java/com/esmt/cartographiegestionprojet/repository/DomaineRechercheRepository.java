@@ -11,4 +11,5 @@ import java.util.UUID;
 public interface DomaineRechercheRepository extends JpaRepository<DomaineRecherche, UUID> {
     Boolean existsByNomDomaine(String nomDomaine);
     Optional<DomaineRecherche> findByNomDomaine(String nomDomaine);
+
 }
